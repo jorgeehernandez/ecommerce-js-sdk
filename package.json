@@ -1,0 +1,20 @@
+{
+  "name": "ecommerce-js-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "concurrently \"npm run watch-ts\" \"npm run watch-node\" ",
+    "watch-ts": "tsc -w",
+    "watch-node": "nodemon dist/index.js"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "concurrently": "^8.2.2",
+    "nodemon": "^2.0.20"
+  },
+  "private": true
+}
